@@ -23,15 +23,15 @@
                     </div>
                     <div class="card-body">
                         <form id="form-principal">
-                            <input id="nombre" type="text" class="form-control mb-2" placeholder="Nombre">
-                            <select id="tipo" class="form-select mb-2">
+                            <input id="nombre" type="text" class="form-control mb-2" placeholder="Nombre" required>
+                            <select id="tipo" class="form-select mb-2" required>
                                 <option selected>Tipo</option>
                                 <option value="Hombre">Hombre</option>
                                 <option value="Mujer">Mujer</option>
                                 <option value="Otro">Otro</option>
                             </select>
-                            <input id="edad" type="text" class="form-control mb-2" placeholder="Edad">
-                            <input id="fecha" type="date" class="form-control mb-2">
+                            <input id="edad" type="text" class="form-control mb-2" placeholder="Edad" required>
+                            <input id="fecha" type="date" class="form-control mb-2" required>
                             <button id="btn-add" type="button" class="btn btn-outline-success col-12"
                                 onclick="saveDate()">AGREGAR</button>
                         </form>
@@ -46,7 +46,6 @@
                         <table class="table text-center">
                             <thead class="table-dark">
                                 <tr>
-                                    <th>ID</th>
                                     <th>Nombre</th>
                                     <th>Tipo</th>
                                     <th>Edad</th>

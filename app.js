@@ -29,7 +29,6 @@ db.collection("usuario").onSnapshot(function (querySnapshot) {
     querySnapshot.forEach(function (doc) {
         tabla.innerHTML += `
         <tr>
-        <th scope = "row">${doc.id}</th>
         <td>${doc.data().nombre}</td>
         <td>${doc.data().tipo} </td>
         <td>${doc.data().edad} </td>
